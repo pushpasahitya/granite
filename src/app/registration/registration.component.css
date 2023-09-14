@@ -1,0 +1,30 @@
+
+.container-fulid{
+  
+    height: 550px;
+    margin-top: 0px;
+}
+.form{
+    margin-left: 400px;
+    border: 0.1px solid rgb(66, 66, 72);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 10px ,13px,13px rgb(49, 49, 52);
+    width: 400px;
+    height: 480px;
+   margin-top: 30px;
+   padding-left: 20px;
+   padding-right: 10px;
+    padding-top: 15px;
+}  
+form{
+    margin-left: 95px;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+.centered{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    transform: translate(-70%, -10%);
+}

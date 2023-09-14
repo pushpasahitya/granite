@@ -1,0 +1,63 @@
+
+    <div class="whole">
+        <a routerLink="/apipages" class="btn btn-primary  ">Add a card</a>&nbsp;
+            <a routerLink="/registration" class="btn btn-primary  ">Registration</a>&nbsp;
+            <a routerLink="/getcontactdetials" class="btn btn-primary ">Contact detials</a>
+            </div>
+            
+            <div class="contianer-fulid ">
+                <div class="cards" >
+                    <div *ngFor="let user of users"  class="card">
+                  
+                    <img 
+                        [src] = "user.image" width="100%" height="300px"><br>
+                   <h3><b>   {{user.packagName}}</b></h3><br>
+                   <h5>{{user.content}}</h5><br>
+                       <h3> ₹{{user.price}}/month</h3>
+                      <h5><br>
+                        {{user.replies}}
+                    </h5><br>
+                   <button class="btn btn-primary" style="align-items: right;
+            margin-left: 65px; margin-right: 90px;" (click)="delExistingData(user)" >delete</button>
+             <br>
+             <button class="btn btn-primary" style="align-items: right;
+             margin-left: 65px; margin-right: 90px;" (click)="edit(user)">edit</button>
+            
+            </div>
+        </div>
+        </div>
+            <!-- searchRs -->
+            <div class="container coo">
+            
+            <div *ngFor="let data of searchRs">
+        
+                <form >
+             <b>   <h1> Update The Data</h1></b>
+                    <label>SNo:</label>
+                    <input type="number" class="form-control"  placeholder="Enter SNO" [(ngModel)]="data.id"  [(ngModel)]="user.id" [ngModelOptions]="{standalone: true}">   
+            
+                    <label>Image URL:</label>
+                    <input type="text"  class="form-control" placeholder="Enterimage URL"  [(ngModel)]="user.image" [(ngModel)]="data.image" [ngModelOptions]="{standalone: true}">  
+            
+                    <label>Package Name:</label>
+                    <input type="text"  class="form-control" placeholder="EnterPackage Name" [(ngModel)]="user.packagName"  [(ngModel)]="data.packagName"  [ngModelOptions]="{standalone: true}">
+            
+            
+                    <label>Content:</label>
+                <input type="text"  class="form-control" placeholder="Enter Content"     [(ngModel)]="user.content" [(ngModel)]="data.content" [ngModelOptions]="{standalone: true}">
+            
+                    <label>Price</label>
+                    <input type="text"  class="form-control" placeholder="Enter price" [(ngModel)]="user.price" [(ngModel)]="data.price" [ngModelOptions]="{standalone: true}">
+            
+                    <label>Replies</label>
+                    <input type="text"  class="form-control" placeholder="Enter Replies" [(ngModel)]="user.replies" [(ngModel)]="data.replies" [ngModelOptions]="{standalone: true}"><br>
+                    <div class="cos">
+                       
+                         <button class="btn btn-primary" (click)="editExistingData(data)" >submit </button>
+                    </div>
+            </form>
+            
+            </div>
+            </div>
+
+

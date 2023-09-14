@@ -1,0 +1,28 @@
+
+<div class="container-fulid  ">
+    <img src="assets/lg2.jpg" width="100%" height="600cm">
+    <button  routerLink="/admin"class="btn btn-success  top-right">Admin Login</button>
+
+    <div class="container login-container">
+       
+            <div class="box">
+                <form class="centered">-
+                    <h1><b>Login </b></h1><BR>
+                    <div class="form-group">
+                        <label><b> Email :</b></label>
+                        <input type="text" class="form-control" placeholder="Your Email *" [(ngModel)]="valid.email"  [ngModelOptions]="{standalone: true}" >
+                    </div>
+                    <div class="form-group">
+                        <label><b> Password:</b></label>
+                        <input type="password" class="form-control" placeholder="Your Password *"  [(ngModel)]="valid.password"   [ngModelOptions]="{standalone: true}"  />
+                    </div>
+                    <div class="form-group">
+                        <button  style="margin-left: 90px; " class="btn btn-success" (click)="checkUser(valid)">Login </button>
+                    </div>
+               
+                </form>
+            </div>
+        </div>
+</div>
+  <!--  routerLink="/update"  -->
+  <!-- (click)="checkUser(valid)" -->

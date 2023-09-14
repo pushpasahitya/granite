@@ -1,0 +1,32 @@
+
+ <div class="containe-fluid coo">
+ 
+   <b>   <h1> ADD THE DATA</h1></b>
+       
+ <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+            <label>Image URL:</label>
+            <input type="text"  class="form-control" placeholder="Enterimage URL"  [(ngModel)]="user.image" [ngModelOptions]="{standalone: true}" required>  
+
+            <label for="packagName">Package Name:</label>
+            <input type="text"  class="form-control" placeholder="EnterPackage Name"  [(ngModel)]="user.packagName" [ngModelOptions]="{standalone: true}" required >
+
+            <!-- <label for="email">Email:</label>
+            <input type="email" id="email" formControlName="email" required> -->
+            
+   
+            <label>Content:</label>
+        <input type="text"  class="form-control" placeholder="Enter Content"  [(ngModel)]="user.content" [ngModelOptions]="{standalone: true}" required>
+
+            <label>Price</label>
+            <input type="text"  class="form-control" placeholder="Enter price"  [(ngModel)]="user.price" [ngModelOptions]="{standalone: true}" required>
+
+            <label>Replies</label>
+            <input type="text"  class="form-control" placeholder="Enter Replies"[(ngModel)]="user.replies" [ngModelOptions]="{standalone: true}" required><br>
+            <div class="cos">
+                
+                 <button class="btn btn-primary" (click)="openaccount($event)" style="margin-left: 230px; margin-top: 10px;"  >submit </button>
+            </div>
+    </form>
+    
+ </div>
+  

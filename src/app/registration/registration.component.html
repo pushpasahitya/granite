@@ -1,0 +1,33 @@
+<div class="container-fulid ">
+   <img src="assets/reg.jpg"  width="98%" height="550px">
+<form>
+    <div class="form centered">
+        <div class="form-group">
+            <h3 class="text-center"><b>Registration From</b></h3>
+            <br>
+            <label><b>Name:</b></label>
+        <input type="text" class="form-control" placeholder="Name"  [(ngModel)]="newuser.name" [ngModelOptions]="{standalone: true}" >
+        </div>
+      
+        <div class="form-group">
+            <label><b>Email:</b></label>
+        <input type="email"  class="form-control" placeholder="Email"   [(ngModel)]="newuser.email" [ngModelOptions]="{standalone: true}">
+        </div>
+        
+        <div class="form-group">
+            <label><b> Password:</b></label>
+        <input type="password"  class="form-control" placeholder="password"   [(ngModel)]="newuser.password" [ngModelOptions]="{standalone: true}">
+        </div>
+       
+        <div class="form-group">
+            <label><b>Mobile Number:</b></label>
+        <input type="number"  class="form-control"placeholder="mobile number"  [(ngModel)]="newuser.phno" [ngModelOptions]="{standalone: true}">
+</div>
+<div class="form-group">
+<label><b>Message:</b></label>
+       <input type="message" class="form-control" placeholder="message"   [(ngModel)]="newuser.message" [ngModelOptions]="{standalone: true}">
+</div>
+     <button class="btn btn-primary" (click)="posted()" style="margin-left: 150px;">submit</button>
+</div>
+</form>
+</div>

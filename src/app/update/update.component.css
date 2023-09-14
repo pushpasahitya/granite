@@ -1,0 +1,46 @@
+
+.whole{
+    float: right;
+    margin-top: .40cm;
+    margin-left: 570px;
+}
+.cards {
+   margin-top: 50px;
+    gap :30px; 
+margin-left: 70px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(10cm, 3cm));
+}
+.card{
+    border: 2px solid rgb(246, 247, 249);
+    border-radius: 2px;
+    box-shadow: 10px 5px 5px 5px rgb(230, 226, 221);
+    border-radius: 20px;
+    width: 350px;
+    height: 630px;
+    padding-left: 10px;
+}
+.coo{
+    top: 60px;
+ padding-bottom: 30px;
+ padding-left: 350px;
+ }
+ 
+ form{ 
+     background-color: aliceblue;
+     border: 1px solid black;
+     border-radius: 30px;
+     padding-left: 30px;
+     width: 600px;
+     padding-bottom: 30px;
+     padding-right: 100px;
+     padding-top: 30px;
+ }
+ .cos{
+     padding-left: 150px;
+     padding-top: 25px;
+ }
+ h1{
+     padding-left: 180px;
+ }
+ 

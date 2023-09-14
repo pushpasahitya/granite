@@ -1,0 +1,20 @@
+.A{
+    margin-top: 10PX;
+    margin-left: 35cm;
+}
+.cards {
+   
+    gap :30px; 
+margin-left: 70px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(11cm, 2cm));
+}
+.card{
+    border: 2px solid rgb(246, 247, 249);
+    border-radius: 2px;
+    box-shadow: 10px 5px 5px 5px rgb(230, 226, 221);
+    border-radius: 20px;
+    width: 350px;
+    height: 600px;
+    padding-left: 10px;
+}

@@ -1,0 +1,36 @@
+.centered {
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translate(-60%, -40%);
+    color:white;
+  }
+
+  .cardlist{
+    gap :1cm; 
+ margin-left: 3cm;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(20rem, 1rem));
+ 
+ 
+ }
+ .card{
+     border: 2px solid rgb(179, 199, 238);
+     border-radius: 2px;
+     box-shadow: 10px 5px 5px 5px rgb(199, 203, 240);
+     border-radius: 10px;
+     width: 320px;
+     height: 280px;
+  
+     margin-left: 2cm;
+ }
+ .card h4{
+  padding-left: 30px;
+  padding-top: 30px;
+ }
+ .coL{
+  padding-left: 600px;
+}
+/* .co{
+  padding-left: 130px;
+} */
