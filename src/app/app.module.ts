@@ -17,6 +17,7 @@ import { ApipageComponent } from './apipage/apipage.component';
 import { AdimComponent } from './adim/adim.component';
 import { UpdateComponent } from './update/update.component';
 import { GetcontactdetialsComponent } from './getcontactdetials/getcontactdetials.component';
+import { PageComponent } from './page/page.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { GetcontactdetialsComponent } from './getcontactdetials/getcontactdetial
     ApipageComponent,
     AdimComponent,
     UpdateComponent,
-    GetcontactdetialsComponent
+    GetcontactdetialsComponent,
+    PageComponent
   ],
   imports: [
     BrowserModule,
